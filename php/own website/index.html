@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nutra_leaf — Static Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand" id="homeBtn">Nutra_leaf</div>
+      <nav>
+        <button id="homeNav">Home</button>
+        <button id="adminNav">Admin</button>
+        <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <!-- content rendered by JS -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Nutra_leaf</div>
+  </footer>
+
+  <script>
+    // Embed products and mock OTP from existing constants
+    const PRODUCTS = [
+      {
+        id: 'p1',
+        name: 'Nutra_leaf Ashwagandha Gold',
+        price: 1299,
+        description: 'Ultra-pure KSM-66 Ashwagandha for stress relief and cognitive performance.',
+        image: 'https://images.unsplash.com/photo-1611073100829-875883713028?auto=format&fit=crop&q=80&w=800',
+        category: 'Stress Relief',
+        benefits: ['Reduces Stress','Improves Focus','Boosts Immunity']
+      },
+      {
+        id: 'p2',
+        name: 'Nutra_leaf Moringa Power',
+        price: 849,
+        description: 'Cold-pressed organic Moringa powder rich in nutrients.',
+        image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=800',
+        category: 'Superfoods',
+        benefits: ['Full Spectrum Nutrition','Energy Boost','Detoxifying']
+      }
+    ];
+    const MOCK_OTP = '123456';
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutra_leaf | Premium Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <div id="root"></div>
+</body>
+</html>

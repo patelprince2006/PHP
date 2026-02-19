@@ -1,0 +1,24 @@
+{
+"products": [
+{
+"id": "p1",
+"name": "Smartphone XYZ",
+"category": "Mobiles",
+"price": 14999,
+"image": "images/products/mobile.jpg",
+"rating": 4.4,
+"description": "Dual-camera smartphone with long-lasting battery.",
+"stock": 25
+},
+{
+"id": "p2",
+"name": "Ultrabook ABC",
+"category": "Laptops",
+"price": 52999,
+"image": "images/products/laptop.jpg",
+"rating": 4.6,
+"description": "Slim, powerful laptop for work and play.",
+"stock": 10
+}
+]
+}

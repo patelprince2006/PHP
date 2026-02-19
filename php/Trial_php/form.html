@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+</head>
+<body>
+  <form action="p.php" method="get">
+  <h2>Form Validation</h2>
+
+  <input type="text" id="txtname" placeholder="Input Name"/>
+  <!-- <span id="s"></span><br/><br/> -->
+  <br>
+  <input id="txtphone" type="text" placeholder="Input 10 digit Number"/>
+  <!-- <span id="s1"></span><br/><br/> -->
+   <br>
+  <input type="submit" value="submit">
+  </form>
+<!--   
+  <button onclick="val()">Submit</button> -->
+<!-- 
+  <script>
+    var txtname = document.getElementById('txtname');
+    var txtphone = document.getElementById('txtphone');
+
+    // Regular expressions
+    var str = /^[a-zA-Z]+$/;        // only alphabets
+    var num = /^[0-9]{10}$/;        // exactly 10 digits
+
+    function val(){
+      let isValid = true;
+
+      // Name validation
+      if(!str.test(txtname.value)){
+        document.getElementById('s').style.color = 'red';
+        document.getElementById('s').innerHTML = '*Invalid Input';
+        txtname.focus();
+        isValid = false;
+      } else {
+        document.getElementById('s').innerHTML = ''; // clear error
+      }
+
+      // Phone validation
+      if(!num.test(txtphone.value)){
+        document.getElementById('s1').style.color = 'red';
+        document.getElementById('s1').innerHTML = '*Invalid Input';
+        if(isValid) txtphone.focus(); // focus only if name is valid
+        isValid = false;
+      } else {
+        document.getElementById('s1').innerHTML = ''; // clear error
+      }
+
+      // If all valid
+      if(isValid){
+        alert("Form submitted successfully!");
+      }
+    }
+  </script> -->
+</body>
+</html>
